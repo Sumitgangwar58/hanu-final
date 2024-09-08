@@ -1,0 +1,10 @@
+.footer-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-block: 2rem;
+  background-color: rgb(234, 232, 232);
+  box-shadow: 0 0 0 100vmax rgb(234, 232, 232);
+  clip-path: inset(0 -100vmax);
+}

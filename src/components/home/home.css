@@ -1,0 +1,41 @@
+.home {
+  padding: 1rem;
+  min-height: calc(100dvh - 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-conatiner {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    max-width: 350px;
+    padding: 0.5rem 1rem;
+    svg {
+      min-width: 1.5rem;
+      min-height: 1.5rem;
+    }
+  }
+  a:hover {
+    color: #fff;
+    background-color: var(--primaryColor);
+    border-radius: 0.5rem;
+  }
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+}
