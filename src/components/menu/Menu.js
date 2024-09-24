@@ -1,11 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import {
-  CloseIcon,
-  LocationIcon,
-  MailIcon,
-  MenuIcon,
-  PhoneIcon,
-} from "../../assets/icon";
+import { CloseIcon, MailIcon, MenuIcon, PhoneIcon } from "../../assets/icon";
 import "./menu.css";
 import getClassNames from "../getclassnames";
 import Logo from "../../assets/Logo";
