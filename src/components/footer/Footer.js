@@ -9,15 +9,15 @@ const Footer = () => {
       <Logo />
       <div className="contact-conatiner">
         <a href="tel:6395379367">
-          <PhoneIcon />
+          <PhoneIcon color={"currentColor"} />
           6395379367
         </a>
         <a href="mailto:sumitgangwar58@gmail.com">
-          <MailIcon />
+          <MailIcon color={"currentColor"} />
           sumitgangwar58@gmail.com
         </a>
         <a href="https://maps.app.goo.gl/MiBCYtLXjzzMHsXY6">
-          <LocationIcon />
+          <LocationIcon color={"currentColor"} />
           A-88, Roorkee Rd, Gangotri Colony, Daurli, Meerut, Uttar Pradesh
           250001
         </a>

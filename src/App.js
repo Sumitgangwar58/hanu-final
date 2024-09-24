@@ -6,17 +6,20 @@ import Services from "./components/services/Services";
 import Gallery from "./components/gallery/Gallery";
 import ContactUs from "./components/contactUs/ContactUs";
 import Footer from "./components/footer/Footer";
+import React from "react";
 
 function App() {
   return (
-    <div className="App container">
+    <React.Fragment>
       <Home />
-      <AboutUs />
-      <Services />
-      <Gallery />
-      <ContactUs />
-      <Footer />
-    </div>
+      <div className="App container">
+        <AboutUs />
+        <Services />
+        <Gallery />
+        <ContactUs />
+        <Footer />
+      </div>
+    </React.Fragment>
   );
 }
 

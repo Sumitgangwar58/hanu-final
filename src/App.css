@@ -6,5 +6,9 @@ a {
 .App {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
+  margin-top: 4rem;
+  h2 {
+    padding-bottom: 1rem;
+  }
 }

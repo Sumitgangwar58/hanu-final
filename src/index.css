@@ -5,10 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --primaryColor: #ad8b3a;
-  --secondaryTextColor: #a3814f;
+  --primaryColor: hsl(42, 50%, 45%);
+  --secondaryTextColor: hsl(36, 35%, 47%);
+  --lightBackgroundColor: lightgoldenrodyellow;
   font-family: "Montserrat", sans-serif;
   line-height: 2rem;
+  --hoverColor: #00000010;
 }
 
 .cinzel-font {
@@ -18,15 +20,18 @@ body {
 }
 
 h2 {
-  color: var(--primaryColor);
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 h3,
 a {
-  color: var(--secondaryTextColor);
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -34,6 +39,19 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea {
+  border-color: var(--primaryColor);
+}
+
+input:focus,
+textarea:focus {
+  background-color: var(--lightBackgroundColor);
+  outline-color: var(--primaryColor);
 }
 
 code {

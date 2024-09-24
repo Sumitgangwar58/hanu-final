@@ -6,7 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const Gallery = () => {
   return (
-    <div className="gallery-container">
+    <div className="gallery-container" id="gallery">
       <h2>Gallery</h2>
       <Carousel>
         {images.map((item) => {

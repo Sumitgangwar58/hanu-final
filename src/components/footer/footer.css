@@ -4,7 +4,21 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-block: 2rem;
-  background-color: rgb(234, 232, 232);
-  box-shadow: 0 0 0 100vmax rgb(234, 232, 232);
+  background-color: rgba(0, 0, 0);
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0);
   clip-path: inset(0 -100vmax);
+  align-items: center;
+  .contact-conatiner {
+    margin: 0;
+    a {
+      font-size: 16px;
+      color: var(--primaryColor);
+    }
+    a:hover {
+      color: #fff;
+    }
+  }
+  .logo img {
+    max-width: 300px !important;
+  }
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="about-us--container">
+    <div id="about-us" className="about-us--container">
       <h2 className="ribbon">About Us</h2>
       <p>
         At Kalyani Farms, we are dedicated to creating unforgettable experiences

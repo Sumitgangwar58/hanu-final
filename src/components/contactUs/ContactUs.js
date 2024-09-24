@@ -3,7 +3,7 @@ import "./contactUs.css";
 
 const ContactUs = () => {
   return (
-    <div className="contact-us-container">
+    <div className="contact-us-container" id="contact-us">
       <h2>Contact Us</h2>
       <form className="contact-form">
         <label>
@@ -26,6 +26,7 @@ const ContactUs = () => {
             cols={4}
           />
         </label>
+        <button className="submit-button">Send</button>
       </form>
     </div>
   );

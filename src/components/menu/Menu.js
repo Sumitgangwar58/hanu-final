@@ -1,5 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import { MenuIcon } from "../../assets/icon";
+import {
+  CloseIcon,
+  LocationIcon,
+  MailIcon,
+  MenuIcon,
+  PhoneIcon,
+} from "../../assets/icon";
 import "./menu.css";
 import getClassNames from "../getclassnames";
 import Logo from "../../assets/Logo";
@@ -35,15 +41,41 @@ const Menu = () => {
           active: isMenuActive,
         })}
       >
+        <button
+          className="menu-toggle-button"
+          onClick={() => setIsMenuActive((prev) => !prev)}
+        >
+          <CloseIcon color="currentColor" />
+        </button>
         <nav className="menu-list">
           <Logo />
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Gallery</li>
-            <li>Contact US</li>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about-us">About Us</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#contact-us">Contact Us</a>
+            </li>
           </ul>
         </nav>
+        <div className="contact-conatiner">
+          <a href="tel:6395379367">
+            <PhoneIcon color="currentColor" />
+            6395379367
+          </a>
+          <a href="mailto:sumitgangwar58@gmail.com">
+            <MailIcon color="currentColor" />
+            sumitgangwar58@gmail.com
+          </a>
+        </div>
       </div>
     </div>
   );
